@@ -77,6 +77,22 @@ python scripts/check_dataset_tree.py --config configs/cosec.yaml
 
 This checks the sequence directory, RGB folder, depth folder, event h5 file, timestamps, and intrinsics. It prints image counts, timestamp rows, and h5 keys/shapes/dtypes without reading all events into memory.
 
+## Build Train Manifest
+
+After the full training split is available on the server, scan all sequences and write a small JSON manifest:
+
+```bash
+python scripts/build_train_manifest.py --data-root /data_nvme_4tb/yzx/cosec --split train --output metadata/train_manifest.json
+```
+
+Then summarize it:
+
+```bash
+python scripts/check_manifest_summary.py --manifest metadata/train_manifest.json
+```
+
+The manifest records sequence status, missing files, RGB/depth/timestamp counts, event keys, event count, and event timestamp range. It reads h5 metadata and only the first/last event timestamps, not the full event arrays.
+
 ## Inspect One Sample
 
 ```bash

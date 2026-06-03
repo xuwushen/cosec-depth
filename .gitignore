@@ -18,3 +18,10 @@ logs/
 *.ckpt
 *.npy
 *.npz
+
+metadata/*.h5
+metadata/*.zip
+metadata/*.pt
+metadata/*.pth
+metadata/*.ckpt
+!metadata/*.json
