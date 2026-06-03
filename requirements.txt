@@ -1,0 +1,7 @@
+h5py
+numpy
+pillow
+opencv-python-headless
+matplotlib
+pyyaml
+tqdm
