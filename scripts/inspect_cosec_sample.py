@@ -21,10 +21,15 @@ def build_dataset(cfg: dict) -> CoSECDataset:
     return CoSECDataset(
         data_root=cfg["data_root"],
         sequence=cfg["sequence"],
+        view=cfg.get("view", "left"),
         image_folder=cfg.get("image_folder", "img_co_left"),
         depth_folder=cfg.get("depth_folder", "depth_co"),
         event_file=cfg.get("event_file", "events_co_left.h5"),
         timestamp_file=cfg.get("timestamp_file", "timestamps.txt"),
+        intrinsics_file=cfg.get("intrinsics_file", "intrinsics.json"),
+        intrinsics_key=cfg.get("intrinsics_key", "Co_Rect_L"),
+        image_height=cfg.get("image_height", 624),
+        image_width=cfg.get("image_width", 1200),
         depth_scale=cfg.get("depth_scale", 256.0),
         event_window_mode=cfg.get("event_window_mode", "fixed"),
         event_window_ms=cfg.get("event_window_ms", 50),
@@ -68,6 +73,7 @@ def main() -> None:
     print(f"rgb_path: {sample['rgb_path']}")
     print(f"depth_path: {sample['depth_path']}")
     print(f"sequence_name: {sample['sequence_name']}")
+    print(f"intrinsics:\n{sample['intrinsics']}")
 
 
 if __name__ == "__main__":

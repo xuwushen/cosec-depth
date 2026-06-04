@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -43,9 +44,24 @@ def load_config(path: str | Path) -> dict:
 
 
 def collate_batch(batch: list[dict]) -> dict:
+    rgb_tensors = []
+    depth_tensors = []
+
+    for item in batch:
+        rgb = np.ascontiguousarray(item["rgb"])
+        depth = np.ascontiguousarray(item["depth"])
+
+        if rgb.ndim != 3 or rgb.shape[2] != 3:
+            raise ValueError(f"Expected RGB shape HWC with 3 channels, got {rgb.shape}.")
+        if depth.ndim != 2:
+            raise ValueError(f"Expected depth shape HW, got {depth.shape}.")
+
+        rgb_tensors.append(torch.from_numpy(rgb).permute(2, 0, 1).float() / 255.0)
+        depth_tensors.append(torch.from_numpy(depth).unsqueeze(0).float())
+
     return {
-        "rgb": torch.stack([item["rgb"] for item in batch], dim=0),
-        "depth": torch.stack([item["depth"] for item in batch], dim=0),
+        "rgb": torch.stack(rgb_tensors, dim=0),
+        "depth": torch.stack(depth_tensors, dim=0),
         "frame_id": [item["frame_id"] for item in batch],
     }
 
@@ -68,12 +84,17 @@ def main() -> None:
         data_root=args.data_root or cfg["data_root"],
         sequence=args.sequence or cfg["sequence"],
         event_window_ms=cfg.get("event_window_ms", 50),
+        event_window_mode=cfg.get("event_window_mode", "fixed"),
         view=cfg.get("view", "left"),
         depth_scale=cfg.get("depth_scale", 256.0),
         image_folder=cfg.get("image_folder", "img_co_left"),
         event_file=cfg.get("event_file", "events_co_left.h5"),
-        depth_folder_candidates=cfg.get("depth_folder_candidates", ["depth_co_single", "depth_co"]),
+        depth_folder=cfg.get("depth_folder", "depth_co"),
         timestamp_file=cfg.get("timestamp_file", "timestamps.txt"),
+        intrinsics_file=cfg.get("intrinsics_file", "intrinsics.json"),
+        intrinsics_key=cfg.get("intrinsics_key", "Co_Rect_L"),
+        image_height=cfg.get("image_height", 624),
+        image_width=cfg.get("image_width", 1200),
     )
     loader = DataLoader(
         dataset,

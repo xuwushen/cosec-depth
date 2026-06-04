@@ -1,4 +1,5 @@
 data_root: /data_nvme_4tb/yzx/cosec
+split: train
 sequence: train/Day_Campus_000
 view: left
 image_folder: img_co_left
@@ -6,6 +7,7 @@ depth_folder: depth_co
 event_file: events_co_left.h5
 timestamp_file: timestamps.txt
 intrinsics_file: intrinsics.json
+intrinsics_key: Co_Rect_L
 image_height: 624
 image_width: 1200
 depth_scale: 256.0
@@ -14,3 +16,4 @@ event_window_ms: 50
 output_dir: outputs/debug_vis
 batch_size: 1
 num_workers: 0
+manifest_path: metadata/train_manifest.json
