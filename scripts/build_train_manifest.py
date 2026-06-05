@@ -8,7 +8,6 @@ from typing import Any
 import h5py
 
 
-IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff"}
 REQUIRED_ITEMS = {
     "img_co_left": "dir",
     "depth_co": "dir",
@@ -19,7 +18,7 @@ REQUIRED_ITEMS = {
 
 
 def count_images(directory: Path) -> int:
-    return sum(1 for path in directory.iterdir() if path.suffix.lower() in IMAGE_EXTENSIONS)
+    return sum(1 for path in directory.glob("*.png") if path.is_file())
 
 
 def count_timestamps(path: Path) -> int:
@@ -107,7 +106,7 @@ def inspect_sequence(split: str, sequence_dir: Path) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build a CoSEC training split manifest.")
-    parser.add_argument("--data-root", default="/data_nvme_4tb/yzx/cosec")
+    parser.add_argument("--data-root", required=True)
     parser.add_argument("--split", default="train")
     parser.add_argument("--output", default="metadata/train_manifest.json")
     args = parser.parse_args()

@@ -2,6 +2,7 @@
 __pycache__/
 .pycache/
 .DS_Store
+.vscode/
 
 data/
 CoSEC/
@@ -25,3 +26,4 @@ metadata/*.pt
 metadata/*.pth
 metadata/*.ckpt
 !metadata/*.json
+metadata/train_manifest.json

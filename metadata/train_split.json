@@ -1,0 +1,371 @@
+{
+  "subset": "train",
+  "total_sequences": 91,
+  "total_frames": 10544,
+  "sequences": [
+    {
+      "sequence": "train/Day_Campus_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_010",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Campus_011",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_010",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_010",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_010",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_012",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_013",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_014",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_001",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_010",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_011",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Village_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Village_002",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Village_003",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Village_004",
+      "status": "ok"
+    }
+  ]
+}

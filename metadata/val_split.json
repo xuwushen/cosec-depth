@@ -1,0 +1,51 @@
+{
+  "subset": "val",
+  "total_sequences": 11,
+  "total_frames": 1238,
+  "sequences": [
+    {
+      "sequence": "train/Day_Campus_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_City_006",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Park_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_008",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Suburbs_011",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Day_Village_005",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Campus_004",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_City_000",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Park_007",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Suburbs_009",
+      "status": "ok"
+    },
+    {
+      "sequence": "train/Night_Village_001",
+      "status": "ok"
+    }
+  ]
+}

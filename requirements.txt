@@ -1,8 +1,7 @@
-h5py
-numpy
-pillow
-opencv-python-headless
-matplotlib
-pyyaml
-tqdm
-torch
+numpy>=1.24,<2.0
+h5py>=3.10,<4.0
+Pillow>=10.0,<12.0
+PyYAML>=6.0,<7.0
+tqdm>=4.66,<5.0
+torch>=2.1,<2.6
+torchvision>=0.16,<0.21
